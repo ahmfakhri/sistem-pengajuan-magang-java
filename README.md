@@ -1,0 +1,9 @@
+| Class          | Atribut                                             | Method                                                                                                                           |
+| -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **User**       | id, username, email, password, role                 | getUsername(), getRole()                                                                                                         |
+| **Admin**      | nama                                                | tambahMahasiswa(), hapusMahasiswa(), tambahPerusahaan(), hapusPerusahaan(), prosesPengajuan(), tentukanDosen(), pilihPengajuan() |
+| **Mahasiswa**  | npm, nama, no_hp, ipk                               | getNama(), getNpm(), getIpk(), ajukanMagang(), lihatPengajuan(), lihatMagang()                                                   |
+| **Dosen**      | nidn, nama, no_hp                                   | getNama(), getNidn(), lihatMahasiswaBimbingan()                                                                                  |
+| **Perusahaan** | id_perusahaan, nama, email, alamat                  | getNama(), getAlamat()                                                                                                           |
+| **Pengajuan**  | id_pengajuan, status, alasan, mahasiswa, perusahaan | setStatus(), setAlasan(), getStatus(), getMahasiswa(), getPerusahaan(), tampilkanDetail(), tampilkanList()                       |
+| **Magang**     | mahasiswa, perusahaan, dosen                        | setDosenPembimbing(), getMahasiswa(), getPerusahaan(), getDosen(), tampilkanInfo()                                               |
