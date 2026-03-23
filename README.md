@@ -1,7 +1,7 @@
 | Class          | Atribut                                             | Method                                                                                                                           |
 | -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | **User**       | id, username, email, password, role                 | getUsername(), getRole()                                                                                                         |
-| **Admin**      | nama                                                | tambahMahasiswa(), hapusMahasiswa(), tambahPerusahaan(), hapusPerusahaan(), prosesPengajuan(), tentukanDosen(), pilihPengajuan() |
+| **Admin**      | nama                                                | prosesPengajuan(), tentukanDosen() |
 | **Mahasiswa**  | npm, nama, no_hp, ipk                               | getNama(), getNpm(), getIpk(), ajukanMagang(), lihatPengajuan(), lihatMagang()                                                   |
 | **Dosen**      | nidn, nama, no_hp                                   | getNama(), getNidn(), lihatMahasiswaBimbingan()                                                                                  |
 | **Perusahaan** | id_perusahaan, nama, email, alamat                  | getNama(), getAlamat()                                                                                                           |
