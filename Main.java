@@ -163,7 +163,10 @@ public class Main {
 
                     System.out.println("\n=== DAFTAR PERUSAHAAN ===");
                     for (int i = 0; i < listPerusahaan.size(); i++) {
-                        System.out.println((i + 1) + ". " + listPerusahaan.get(i).getNama());
+                        System.out.println((i + 1) + ". "
+                        + listPerusahaan.get(i).getNama()
+                        + " - "
+                        + listPerusahaan.get(i).getAlamat());
                         }
 
                     System.out.print("Pilih perusahaan: ");
