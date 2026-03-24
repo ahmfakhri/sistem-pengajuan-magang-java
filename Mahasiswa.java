@@ -40,6 +40,7 @@ public class Mahasiswa extends User {
         
         for (Pengajuan p : listPengajuan) {
             if (p.getMahasiswa() == this) {
+                System.out.println("\n=== DATA PENGAJUAN ===");
                 System.out.println("Perusahaan : " + p.getPerusahaan().getNama());
                 System.out.println("Status : " + p.getStatus());
                 ada = true;
@@ -54,6 +55,7 @@ public class Mahasiswa extends User {
         boolean ada = false;
         for (Magang m : listMagang) {
             if (m.getMahasiswa() == this) {
+                System.out.println("\n=== DATA MAGANG ===");
                 System.out.println("Perusahaan : " + m.getPerusahaan().getNama());
                 System.out.println("Magang Aktif");
                 System.out.println("------------------");

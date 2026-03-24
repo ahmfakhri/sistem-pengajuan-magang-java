@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         // ===== DATA AWAL =====
-        Admin admin = new Admin(1, "admin", "admin@mail.com", "123", "Admin Fulan");
+        Admin admin = new Admin(1, "admin", "admin@mail.com", "123", "Administrator");
 
         listMahasiswa.add(new Mahasiswa(1, "Fakhri", "fakhri@gmail.com", "123", "250215003", "Fakhri", "08123", 3.5));
         listPerusahaan.add(new Perusahaan("Google", "google@mail.com", "USA"));
@@ -104,7 +104,7 @@ public class Main {
                     String alasan = input.next();
 
                     
-
+                    Dosen d = null;
                     // pilih dosen
                     if (status.equalsIgnoreCase("Diterima")) {
 
@@ -119,12 +119,13 @@ public class Main {
                         }
 
                         int pilihDosen = input.nextInt();
-                        Dosen d = listDosen.get(pilihDosen - 1);
+                        d = listDosen.get(pilihDosen - 1);
                     
-                        // panggil logic di Admin
-                        admin.prosesStatusPengajuan(p, status, alasan, listMagang, d);
+                        
+                        
                         }
-
+                    // panggil logic Admin
+                    admin.prosesPengajuan(p, status, alasan, listMagang, d);
                     break;
 
                 case 0:
@@ -147,6 +148,7 @@ public class Main {
 
         while (true) {
             System.out.println("\n=== MENU MAHASISWA ===");
+            System.out.println("Login sebagai: " + mhs.getNama());
             System.out.println("1. Ajukan Magang");
             System.out.println("2. Lihat Pengajuan");
             System.out.println("3. Lihat Magang");
@@ -156,6 +158,20 @@ public class Main {
 
             switch (pilih) {
                 case 1:
+                    boolean sudahMagang = false;
+
+                    for (Magang m : listMagang) {
+                        if (m.getMahasiswa() == mhs) {
+                            sudahMagang = true;
+                            break;
+                        }
+                    }
+
+                    if (sudahMagang) {
+                        System.out.println("Anda sudah memiliki magang aktif!");
+                        break;
+                    }
+
                     if (listPerusahaan.isEmpty()) {
                         System.out.println("Belum ada perusahaan tersedia.");
                         break;

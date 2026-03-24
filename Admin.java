@@ -13,7 +13,7 @@ public class Admin extends User {
     }
 
     // ================= PENGAJUAN =================
-    public void prosesStatusPengajuan(Pengajuan p, String status, String alasan, ArrayList<Magang> listMagang, Dosen dosen) {
+    public void prosesPengajuan(Pengajuan p, String status, String alasan, ArrayList<Magang> listMagang, Dosen dosen) {
         p.setStatus(status);
         p.setAlasan(alasan);
 
