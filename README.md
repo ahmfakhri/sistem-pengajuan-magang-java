@@ -42,7 +42,8 @@ Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obj
 
 ## 2. Class Diagram
 
-<img width="1224" height="932" alt="magang3 drawio" src="https://github.com/user-attachments/assets/44594406-4c63-4e58-ac76-b33a32404713" />
+<img width="1225" height="932" alt="magang4 drawio" src="https://github.com/user-attachments/assets/8bd33caa-2be0-4b67-a383-a3b2a988dc9d" />
+
 
 
 
