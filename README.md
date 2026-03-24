@@ -27,7 +27,7 @@ Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obj
 | User | id, username, email, password, role | getUsername(), getRole() |
 | Admin | nama | getNama(), prosesPengajuan(), tentukanDosen() |
 | Mahasiswa | npm, nama, ipk | getNama(), getNpm(), getIpk(), ajukanMagang(), lihatPengajuan(), lihatMagang() |
-| Dosen | nidn, nama | getNama(), getNidn(), lihatMahasiswaBimbingan() |
+| Dosen | nidn, nama | getNidn(), getNama(), lihatMahasiswaBimbingan() |
 | Perusahaan | id_perusahaan, nama, email, alamat | getIdPerusahaan(), getNama(), getEmail(), getAlamat() |
 | Pengajuan | status, alasan, mahasiswa, perusahaan | setStatus(), setAlasan(), getStatus(), getAlasan(), getMahasiswa(), getPerusahaan(), tampilkanDetail(), tampilkanList() |
 | Magang | mahasiswa, perusahaan, dosen | getMahasiswa(), getPerusahaan(), getDosen(), setDosenPembimbing(), tampilkanMagang() |
@@ -42,7 +42,7 @@ Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obj
 
 ## 2. Class Diagram
 
-<img width="1225" height="897" alt="magangdiagram drawio" src="https://github.com/user-attachments/assets/d2533092-e2e5-4722-86a3-fb33d7706526" />
+<img width="1224" height="967" alt="magang2 drawio" src="https://github.com/user-attachments/assets/3022241e-ac22-43b2-9861-60fb34cce70a" />
 
 
 ---
