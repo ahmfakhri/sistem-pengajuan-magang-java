@@ -7,6 +7,8 @@ Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obj
 - NPM: 250215003
 - Kelas: TRPL-1A
 
+---
+
 ## 1. Analisis Sistem
 
 ### Class yang digunakan:
@@ -48,7 +50,7 @@ Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obj
 ## 3. Implementasi Program
 
 Program dibuat menggunakan:
-- Java (OOP)
+- Java (PBO)
 - ArrayList
 - Percabangan (if/switch)
 - Perulangan (looping)
