@@ -13,12 +13,12 @@ public class Dosen extends User {
         this.nama = nama;
     }
 
-    public String getNama() {
-        return nama;
-    }
-
     public String getNidn() {
         return nidn;
+    }
+
+    public String getNama() {
+        return nama;
     }
 
     // fitur utama

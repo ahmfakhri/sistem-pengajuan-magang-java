@@ -57,25 +57,23 @@ public class Main {
         while (true) {
             System.out.println("\n=== MENU ADMIN ===");
             System.out.println("Login sebagai: " + admin.getNama());
-            System.out.println("1. Lihat Pengajuan");
-            System.out.println("2. Proses Pengajuan");
+            System.out.println("1. Lihat list Pengajuan");
+            System.out.println("2. Lihat list Magang");
+            System.out.println("3. Proses Pengajuan");
             System.out.println("0. Kembali");
             System.out.print("Pilih: ");
             int pilih = input.nextInt();
 
             switch (pilih) {
                 case 1:
-                    if (listPengajuan.isEmpty()) {
-                        System.out.println("Belum ada pengajuan");
-                    } else {
-                        for (Pengajuan p : listPengajuan) {
-                            p.tampilkanDetail();
-                            System.out.println("------------------");
-                        }
-                    }
+                    admin.lihatListPengajuan(listPengajuan);
                     break;
 
                 case 2:
+                    admin.lihatListMagang(listMagang);
+                    break;
+
+                case 3:
                     if (listPengajuan.isEmpty()) {
                         System.out.println("Tidak ada pengajuan");
                         break;
