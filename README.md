@@ -70,7 +70,7 @@ Fitur:
 ## 4. Analisis Konsep PBO
 
 ### 1. Class & Object
-Class digunakan seperti Mahasiswa, Dosen, dan Pengajuan. Object dibuat dari class tersebut untuk merepresentasikan data nyata.
+Konsep class dan object diterapkan dengan menjadikan setiap entitas dalam sistem sebagai class, seperti Mahasiswa, Admin, Pengajuan, dan Magang. Object dari class tersebut digunakan untuk menjalankan alur program, misalnya object Mahasiswa membuat object Pengajuan saat mengajukan magang, dan object Admin memproses pengajuan tersebut hingga menghasilkan object Magang.
 
 ### 2. Enkapsulasi
 Atribut dibuat private dan diakses melalui method (getter/setter), sehingga data lebih aman.
